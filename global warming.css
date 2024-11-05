@@ -15,17 +15,17 @@ body{
     display:none;
 } */
 #divbody{
-    /* background-color: aqua; */
+    
     display: grid;
     grid-template-columns: 20% 80%;
 }
 #sidebar{
-    /* background-color: rgb(173, 135, 89);  */
+    
     height: 100vh;
     display: grid;
     grid-template-rows: 30% auto 30%;
     
-    /* background-image: linear-gradient(to bottom,rgb(152, 216, 230),rgba(32, 118, 152, 0.74)); */
+   
 }
 
 
