@@ -15,17 +15,17 @@ body{
     display:none;
 } */
 #divbody{
-    
+    /* background-color: aqua; */
     display: grid;
     grid-template-columns: 20% 80%;
 }
 #sidebar{
-    
-    height: 100vh;
+    /* background-color: rgb(173, 135, 89);  */
+    height: 100%;
     display: grid;
     grid-template-rows: 30% auto 30%;
     
-   
+    /* background-image: linear-gradient(to bottom,rgb(152, 216, 230),rgba(32, 118, 152, 0.74)); */
 }
 
 
@@ -103,4 +103,45 @@ a{
 }
 hr{
     margin-top: 5px;
+}
+#about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    color: beige;
+    grid-gap: 10px;
+    
+}
+#creator{
+    background-color: #484a4c;
+    padding: 10px;
+    
+}
+
+#create{
+    text-align: left;
+}
+#names{
+    text-align: center;
+    padding-bottom:10px;
+}
+#donation{
+    background-color: #484a4c;
+    text-align: center;
+    
+}
+
+#loginlink{
+    
+    padding: 10px;
+    border: 5px double;
+    border-radius: 20px;
+    color:#000000;
+    text-decoration: none;
+    font-weight:bold
+    
+}
+#login{
+    padding-top: 10%;
+    text-align: center;
 }
