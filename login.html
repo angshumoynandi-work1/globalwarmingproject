@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="glass-container">
+        <div id="login-box">
+            <h2>Login</h2>
+            <form action="">
+
+                <input type="text" id="username" name="username" required placeholder="Username">
+
+                <input type="password" id="password" name="password" required placeholder="Password">
+
+                <div id="options">
+                    <input type="checkbox" name="remember" id="remember" value=true>
+                    <label for="remember"><b>Remember me</b></label>
+                    <a href="#"><b>Forgot Password?</b></a>
+                </div>
+
+                <button type="button" id="login" onclick="exit()">Login</button>
+                <p>Don't have an account?<a href="#" id="register">&ensp;Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        
+
+        function exit(){
+            var a=document.getElementById('username').value;
+            var b=document.getElementById('password').value;
+
+            var d=document.getElementById('remember').checked;
+            
+
+            if (b!=='' && a!==""){
+                if (d==true){
+                    document.getElementById('username').defaultValue=a;
+                    document.getElementById('password').defaultValue=b;
+                }
+                var c=confirm("You sure you entered right info?");
+                if(c==true){
+                    window.location.href='index.html';
+                }
+            }else{
+                alert("fill out the full form to login!!")
+            }
+        };
+
+    </script>
+
+</body>
+</html>
+
